@@ -8,7 +8,7 @@ import Interfaces.*;
 public class TestAccuWeather {
 	@Test
 	public void testTemperatura() {
-		ClienteClima clima = ClimaDeBuenosAires.intance();
+		AccuWheatherService clima = new AccuWheatherService("Buenos Aires, Argentina",1);
 		
 		assertEquals(13.89, clima.getTemperaturaCelcius(), 0.5);
 	}

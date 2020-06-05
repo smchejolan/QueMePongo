@@ -12,7 +12,8 @@ public class FabricaJohnson implements Fabrica{
 		Borrador borrador = new Borrador();
 		borrador.seleccionarTipo(Tipo.Camisa);
 		borrador.seleccionarMaterial(Material.Algodon);
-		borrador.seleccionarColorPrimario(new Color("ffffff"));		
+		borrador.seleccionarColorPrimario(new Color("ffffff"));	
+		borrador.seleccionarTemperaturaMaxima(35.0);
 		return borrador.crearPrenda();
 	}
 
@@ -22,6 +23,7 @@ public class FabricaJohnson implements Fabrica{
 		borrador.seleccionarTipo(Tipo.PantalonDeVestir);
 		borrador.seleccionarMaterial(Material.Algodon);
 		borrador.seleccionarColorPrimario(new Color("000000"));		
+		borrador.seleccionarTemperaturaMaxima(35.0);
 		return borrador.crearPrenda();
 	}
 
@@ -31,6 +33,7 @@ public class FabricaJohnson implements Fabrica{
 		borrador.seleccionarTipo(Tipo.Zapatos);
 		borrador.seleccionarMaterial(Material.Cuero);
 		borrador.seleccionarColorPrimario(new Color("000000"));		
+		borrador.seleccionarTemperaturaMaxima(35.0);
 		return borrador.crearPrenda();
 	}
 
