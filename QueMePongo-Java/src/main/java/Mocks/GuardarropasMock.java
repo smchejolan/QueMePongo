@@ -4,9 +4,9 @@ import java.util.*;
 
 import Common.Atuendo;
 import Common.Prenda;
-import Interfaces.Guardarropas;
+import Common.Guardarropas;
 
-public class GuardarropasMock implements Guardarropas{
+public class GuardarropasMock{
 	List<Prenda> prendasDisponibles;
 	
 	public GuardarropasMock() {

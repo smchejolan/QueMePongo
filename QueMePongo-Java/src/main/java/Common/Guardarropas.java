@@ -2,10 +2,9 @@ package Common;
 
 import java.util.List;
 
-import Interfaces.Guardarropas;
 import Interfaces.Sugerencia;
 
-public class GuardarropasCompartido implements Guardarropas{
+public class Guardarropas{
 	private List<Prenda> prendas;
 	public List<Sugerencia> sugerenciasPendientes;
 	public List<Sugerencia> sugerenciasAceptadas;
@@ -40,5 +39,8 @@ public class GuardarropasCompartido implements Guardarropas{
 	}
 	public void agregarSugerencia(Sugerencia sugerencia) {
 		this.sugerenciasPendientes.add(sugerencia);
+	}
+	public List<Prenda> getPrendas() {
+		return prendas;
 	}
 }

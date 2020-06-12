@@ -5,10 +5,13 @@ import Interfaces.Sugerencia;
 public class SugerenciaAgregar  implements Sugerencia{
 	private Prenda prenda;
 	
-	public void Aceptar(GuardarropasCompartido guardarropas) {
+	public SugerenciaAgregar(Prenda prenda) {
+		this.prenda = prenda;
+	}
+	public void Aceptar(Guardarropas guardarropas) {
 		guardarropas.agregarPrenda(prenda);
 	}
-	public void Deshacer(GuardarropasCompartido guardarropas) {
+	public void Deshacer(Guardarropas guardarropas) {
 		guardarropas.removerPrenda(prenda);
 	}
 }

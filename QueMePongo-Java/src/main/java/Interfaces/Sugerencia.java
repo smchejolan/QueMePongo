@@ -1,8 +1,8 @@
 package Interfaces;
 
-import Common.GuardarropasCompartido;
+import Common.Guardarropas;
 
 public interface Sugerencia {
-	public void Aceptar(GuardarropasCompartido guardarropas);
-	public void Deshacer(GuardarropasCompartido guardarropas);
+	public void Aceptar(Guardarropas guardarropas);
+	public void Deshacer(Guardarropas guardarropas);
 }

@@ -3,11 +3,11 @@ package Common;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import Interfaces.Guardarropas;
 import Interfaces.WeatherService;
+import Mocks.GuardarropasMock;
 
 public class GestorDeImagen {
-	public Atuendo getSugerencia(String ciudad, Guardarropas guardarropas){
+	public Atuendo getSugerencia(String ciudad, GuardarropasMock guardarropas){
 		AccuWheatherService clima = new AccuWheatherService("Buenos Aires, Argentina",1);
 		
 		Double temperatura = clima.getTemperaturaCelcius();
